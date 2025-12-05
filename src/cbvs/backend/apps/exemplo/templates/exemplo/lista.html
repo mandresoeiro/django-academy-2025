@@ -1,0 +1,11 @@
+<h1>Itens</h1>
+
+<a href="{% url 'exemplo:novo' %}">Novo Item</a>
+
+<ul>
+  {% for item in itens %}
+    <li>
+      <a href="{% url 'exemplo:detalhe' item.id %}">{{ item.nome }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,5 @@
+<h1>{{ item.nome }}</h1>
+<p>{{ item.descricao }}</p>
+
+<a href="{% url 'exemplo:editar' item.id %}">Editar</a>
+<a href="{% url 'exemplo:deletar' item.id %}">Excluir</a>

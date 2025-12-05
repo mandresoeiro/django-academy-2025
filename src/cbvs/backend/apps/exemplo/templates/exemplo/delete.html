@@ -1,0 +1,8 @@
+<h1>Confirma exclusão?</h1>
+
+<p>Excluir: {{ object.nome }}?</p>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Confirmar</button>
+</form>
